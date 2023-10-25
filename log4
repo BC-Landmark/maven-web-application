@@ -1,0 +1,141 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.mt:maven-web-application:war:0.0.2-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: javax.servlet:javax.servlet-api:jar -> duplicate declaration of version 3.1.0 @ line 87, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[WARNING] The artifact org.codehaus.mojo:sonar-maven-plugin:jar:3.10.0.2594 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:jar:3.10.0.2594: SonarQube plugin was moved to SonarSource organisation
+[INFO] 
+[INFO] --------------------< com.mt:maven-web-application >--------------------
+[INFO] Building maven-web-application 0.0.2-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ maven-web-application ---
+[INFO] Deleting /home/ec2-user/java-projects/maven-web-application/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ maven-web-application ---
+[INFO] skip non existing resourceDirectory /home/ec2-user/java-projects/maven-web-application/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.3:compile (default-compile) @ maven-web-application ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/ec2-user/java-projects/maven-web-application/target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ maven-web-application ---
+[INFO] skip non existing resourceDirectory /home/ec2-user/java-projects/maven-web-application/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.3:testCompile (default-testCompile) @ maven-web-application ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ maven-web-application ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- war:3.3.1:war (default-war) @ maven-web-application ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [maven-web-application] in [/home/ec2-user/java-projects/maven-web-application/target/tesla]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/ec2-user/java-projects/maven-web-application/src/main/webapp]
+[INFO] Building war: /home/ec2-user/java-projects/maven-web-application/target/tesla.war
+[INFO] 
+[INFO] --------------------< com.mt:maven-web-application >--------------------
+[INFO] Building maven-web-application 0.0.2-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- sonar:3.10.0.2594:sonar (default-cli) @ maven-web-application ---
+[INFO] User cache: /home/ec2-user/.sonar/cache
+[INFO] SonarQube version: 7.8.0
+[INFO] Default locale: "en", source code encoding: "UTF-8"
+[INFO] Load global settings
+[INFO] Load global settings (done) | time=81ms
+[INFO] Server id: BF41A1F2-AYtnQQZpohogGt-regtD
+[INFO] User cache: /home/ec2-user/.sonar/cache
+[INFO] Load/download plugins
+[INFO] Load plugins index
+[INFO] Load plugins index (done) | time=60ms
+[INFO] Load/download plugins (done) | time=111ms
+[INFO] Process project properties
+[INFO] Execute project builders
+[INFO] Execute project builders (done) | time=3ms
+[INFO] Project key: com.mt:maven-web-application
+[INFO] Base dir: /home/ec2-user/java-projects/maven-web-application
+[INFO] Working dir: /home/ec2-user/java-projects/maven-web-application/target/sonar
+[INFO] Load project settings for component key: 'com.mt:maven-web-application'
+[INFO] Load project settings for component key: 'com.mt:maven-web-application' (done) | time=18ms
+[INFO] Load quality profiles
+[INFO] Load quality profiles (done) | time=48ms
+[INFO] Load active rules
+[INFO] Load active rules (done) | time=2611ms
+[INFO] Indexing files...
+[INFO] Project configuration:
+[INFO] 6 files indexed
+[INFO] 0 files ignored because of scm ignore settings
+[INFO] Quality profile for java: Sonar way
+[INFO] Quality profile for jsp: Sonar way
+[INFO] Quality profile for xml: Sonar way
+[INFO] ------------- Run sensors on module maven-web-application
+[INFO] Load metrics repository
+[INFO] Load metrics repository (done) | time=77ms
+[INFO] Sensor JavaSquidSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 8
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=13ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=1ms
+[INFO] Java Main Files AST scan
+[INFO] 1 source files to be analyzed
+[INFO] Load project repositories
+[INFO] Load project repositories (done) | time=18ms
+[INFO] 1/1 source files have been analyzed
+[INFO] Java Main Files AST scan (done) | time=493ms
+[INFO] Java Test Files AST scan
+[INFO] 0 source files to be analyzed
+[INFO] Java Test Files AST scan (done) | time=2ms
+[INFO] Sensor JavaSquidSensor [java] (done) | time=1238ms
+[INFO] Sensor JaCoCo XML Report Importer [jacoco]
+[INFO] Sensor JaCoCo XML Report Importer [jacoco] (done) | time=3ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] parsing [/home/ec2-user/java-projects/maven-web-application/target/surefire-reports]
+[INFO] Sensor SurefireSensor [java] (done) | time=2ms
+[INFO] Sensor JaCoCoSensor [java]
+[INFO] Sensor JaCoCoSensor [java] (done) | time=1ms
+[INFO] Sensor JavaXmlSensor [java]
+[INFO] 3 source files to be analyzed
+[INFO] 0/0 source files have been analyzed
+[INFO] 3/3 source files have been analyzed
+[INFO] Sensor JavaXmlSensor [java] (done) | time=203ms
+[INFO] Sensor HTML [web]
+[INFO] Sensor HTML [web] (done) | time=74ms
+[INFO] Sensor XML Sensor [xml]
+[INFO] 3 source files to be analyzed
+[INFO] 3/3 source files have been analyzed
+[INFO] Sensor XML Sensor [xml] (done) | time=163ms
+[INFO] ------------- Run sensors on project
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=9ms
+[INFO] Sensor Java CPD Block Indexer
+[INFO] Sensor Java CPD Block Indexer (done) | time=15ms
+[INFO] SCM provider for this project is: git
+[INFO] 1 files to be analyzed
+[INFO] 0/1 files analyzed
+[WARNING] Missing blame information for the following files:
+[WARNING]   * pom.xml
+[WARNING] This may lead to missing/broken features in SonarQube
+[INFO] Calculating CPD for 2 files
+[INFO] CPD calculation finished
+[INFO] Analysis report generated in 112ms, dir size=95 KB
+[INFO] Analysis report compressed in 47ms, zip size=21 KB
+[INFO] Analysis report uploaded in 72ms
+[INFO] ANALYSIS SUCCESSFUL, you can browse http://172.31.5.136:9000/dashboard?id=com.mt%3Amaven-web-application
+[INFO] Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[INFO] More about the report processing at http://172.31.5.136:9000/api/ce/task?id=AYtnzAd-ohogGt-rei1b
+[INFO] Analysis total time: 7.494 s
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.299 s
+[INFO] Finished at: 2023-10-25T13:05:06-04:00
+[INFO] ------------------------------------------------------------------------
