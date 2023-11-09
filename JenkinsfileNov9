@@ -44,10 +44,21 @@ node{
         sh "echo 'notify the team for unusual accurances' "
         sh "echo 'notify the team if the applications are down' "
         sh "echo 'notify the team if the latency is higher that expected' "
-        emailext body: '''Hi team,
+        emailext(
+          to: 'hotsauce1861@gmail.com',
+          subject: 'Build Status',
+          body: '''Hi team,
+
+          Build status
+
+          BC'''
+         )
+
+       /* emailext body: '''Hi team,
 
 Build status
 
 BC''', recipientProviders: [buildUser(), developers(), upstreamDevelopers(), contributor()], subject: 'Build Status'
+*/
     }
 }
