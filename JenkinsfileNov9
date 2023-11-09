@@ -46,7 +46,7 @@ node{
         sh "echo 'notify the team if the applications are down' "
         sh "echo 'notify the team if the latency is higher that expected' "
         emailext(
-          to: 'hotsauce1861@gmail.com',
+          to: 'brentondevops@gmail.com',
           subject: 'Build Status',
           body: '''Hi team,
 
