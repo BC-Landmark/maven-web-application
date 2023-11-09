@@ -2,7 +2,8 @@ node{
     def mavenHome = tool name: 'Maven3.95'
     stage('1.CloneCode'){
         //Jenkins running on a Linux system  
-        sh "git clone https://github.com/BC-Landmark/maven-web-application"
+        //sh "git clone https://github.com/BC-Landmark/maven-web-application"
+        checkout scm // Use this command to check out your source code
         //git "https://github.com/BC-Landmark/maven-web-application"
         //Jenkins running on a windows system
         //bat "git clone https://github.com/BC-Landmark/maven-web-application"  
@@ -43,7 +44,7 @@ node{
         sh "echo 'notify the team for unusual accurances' "
         sh "echo 'notify the team if the applications are down' "
         sh "echo 'notify the team if the latency is higher that expected' "
-        emailextemailext body: '''Hi team,
+        emailext body: '''Hi team,
 
 Build status
 
